@@ -27,7 +27,6 @@ jobs:
           username: ${{secrets.DOCKER_USERNAME}}
           password: ${{secrets.DOCKER_PASSWORD}}
 
-    - name: build and push docker image to registry
     
     - name: Build the Docker image
       run: |
