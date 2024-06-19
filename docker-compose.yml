@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: shiva:latest
+    container_name: java_app_sample
+    ports:
+      - "8085:8085"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://test-db.c5m6u6esgv7n.ap-south-1.rds.amazonaws.com:3306/schooll
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=root1234
