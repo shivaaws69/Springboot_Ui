@@ -28,7 +28,7 @@ jobs:
           password: ${{secrets.DOCKER_PASSWORD}}
 
     - name: build and push docker image to registry
-    - uses: actions/checkout@v3
+    
     - name: Build the Docker image
       run: |
         COMMIT_ID=$(git rev-parse --short=6 HEAD)
